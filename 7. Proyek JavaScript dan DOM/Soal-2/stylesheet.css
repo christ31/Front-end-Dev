@@ -1,0 +1,316 @@
+/* Reset CSS (JANGAN DIHAPUS) */
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div, textarea {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Calibri, sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+/* Ketik code Anda di bawah */
+.container{
+  margin-top: 15px;
+  background-color: #303030;
+  height: 60px;
+  width: 100%;
+}
+
+.header-left{
+  color: white;
+  height: 100%;
+  float:left;
+  background-color: #eb8934;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title{
+  font-family: Calibri, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 1000;
+  letter-spacing: 5px;
+  padding: 0px 20px;
+  
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.header-right li{
+  display: flex;
+  align-items: center;
+  color: white;
+  float:left;
+  height: 100%;
+  padding: 0px 20px;
+  transition: all 0.13s;
+}
+
+.header-right li:hover{
+  border-bottom: 5px solid #1c8beb;
+  background-color: #707070;
+  cursor: pointer;
+}
+
+/* 2. Bagian Atas Halaman */
+.body-content h1{
+  font-size: 140px;
+}
+
+.body-content h2{
+  font-size: 60px;
+  font-weight: 1;
+  color: #545454;
+  font-family: ;
+}
+
+.body-content span{
+  color: #eb8934;
+}
+
+.body-content{
+  padding: 100px 80px 80px 80px;
+  text-align: center;
+}
+
+.body-content img{
+  width: 210px;
+}
+
+/* 3. Body About */
+.body-about-wrapper{
+  width: 100%;
+  background-color: #dedede;
+  text-align: center;
+}
+
+.body-about{
+  padding: 100px 80px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.body-about p{
+  margin-top: 20px;
+  color: #545454; 
+}
+
+/* 4. Bagian Konten atau Isi */
+.body-lesson{
+  padding: 140px 80px;
+  text-align: center;
+}
+
+.lesson-header{
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.lesson-card-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 350px;
+}
+
+.lesson-card{
+  max-width: 530px;
+  padding: 20px;
+  margin: auto;
+}
+
+.lesson-card img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  margin-bottom: 0px;
+}
+
+.lesson-card p{
+  font-size: 24px;
+  height: 30%;
+}
+
+.link-porto{
+  text-decoration: none;
+  color: black;
+}
+
+.link-wrapper{
+  border-box: inherit;
+  transition: all 0.5s;
+  border: 1px solid grey;
+  height: 100%;
+  background: white; 
+  border-radius: 5px;
+
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.link-wrapper:hover{
+  transform: scale(1.06);
+  padding: 20px;
+  border: 5px solid orange;
+}
+
+/*! Slider */
+.slider-container {
+  text-align: center;
+  background-color: #eee;
+  width: 100%;
+}
+
+.slider-item {
+  display: none; /* Tersembunyi secara default */
+  text-align: center;
+
+  transition: all 1s;
+}
+
+.slider-item img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  /* position: absolute; */
+  top: 150px;
+  
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 3px;
+  user-select: none;
+  color: white;
+  padding: 10px;
+
+  margin: 0 0px;
+
+  background: green;
+
+  transition: all 0.5s;
+}
+
+.next {
+  right: 0;
+}
+
+
+/* 5. Bagian Formulir */
+.body-form{
+  padding: 80px 80px;
+  background-color: #dedede;
+  text-align: center;
+  margin: auto;
+}
+
+.form-header{
+  font-size: 28px;
+  padding-bottom: 30px;
+}
+
+.btn{
+  width: 300px;
+  font-size: 18px;
+  color: white;
+  background-color: #1c8beb;
+  padding: 20px;
+  border: 1px solid #dee7ec;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.form-input{
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.form-input p{
+  margin-bottom: 10px;
+}
+
+.form-input-box{
+  width: 600px;
+  padding: 20px;
+  font-size: 18px;
+  color: #889eab;
+  border: 1px solid #dee7ec;
+  border-radius: 10px;
+  font-family: Calibri, sans-serif;
+  resize: vertical;
+}
+
+/* 6. Footer */
+footer{
+  height: 120px;
+  padding: 40px;
+  color: #fff;
+  background-color: #2f5167;
+}
+
+.footer-left{
+  font-size: 15px;
+  float:left;
+}
+
+.footer-left a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.1s;
+  padding: 5px;
+  border: 1px solid;
+}
+
+.footer-left a:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #9391ff;
+  padding:5px;
+  border: 1px solid #9391ff;
+
+}
+
+.footer-right{
+  height: 120px;
+  float: right;
+}
+
+.footer-right li{
+  margin-bottom: 20px;
+}
+
+.c31{
+  color: #ff00a2;
+  font-family: 'Ubuntu';
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.ninja-ken{
+  /* color:#464573; */
+  color: #9391ff;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.tailwindcss{
+  max-height: 20px;
+}

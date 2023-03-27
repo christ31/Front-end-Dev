@@ -62,7 +62,7 @@ body {
   background-color: white;
 }
 
-/*! Animasi */
+/*! Slider */
 .slider-container {
   text-align: center;
   background-color: #eee;
@@ -103,7 +103,7 @@ img {
   right: 0;
 }
 
-/* Animasi */
+/*! Animasi */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;

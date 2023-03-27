@@ -30,12 +30,12 @@ for(let i = 0; i < btnAccordion.length; i++){
     } else {
       thisPanel.style.display = "block";
     }
-
   })
 }
 
 // debug.innerHTML = btnAccordion.length  
 
+//! Slider 
 let slideIndex = 0;
 
 const updateSlide = (n) => {

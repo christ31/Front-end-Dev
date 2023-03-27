@@ -1,0 +1,38 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+  .body-content h1{
+    font-size: 100px;
+  }
+
+  .body-content h2{
+    font-size: 30px;
+  }
+
+
+  .lesson-card-wrapper{
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+  }
+
+  .body-lesson{
+
+  }
+
+  .form-input-box{
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 670px) {
+  .body-content h1{
+    font-size: 60px;
+  }
+
+  .body-content h2{
+    font-size: 30px;
+  }
+}
