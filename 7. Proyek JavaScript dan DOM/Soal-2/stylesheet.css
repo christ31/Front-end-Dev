@@ -172,14 +172,12 @@ li {
 /*! Slider */
 .slider-container {
   text-align: center;
-  background-color: #eee;
   width: 100%;
 }
 
 .slider-item {
   display: none; /* Tersembunyi secara default */
   text-align: center;
-
   transition: all 1s;
 }
 
