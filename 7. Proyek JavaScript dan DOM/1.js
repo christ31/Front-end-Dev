@@ -1,15 +1,33 @@
-const divDemo = document.getElementById("demo");
-const paragraph = document.createElement("p");
-paragraph.innerHTML = "Hello World!2";
-divDemo.append(paragraph);
-
+const output = document.getElementById("appendThis");
 const debug = document.getElementsByClassName("debug");
 const inputValue = document.getElementById("inputValue");
 
 function run(){
-  // debug[0].innerHTML = "Test";
-  debug[0].innerHTML = inputValue.value;
+  let answer = "";
+  let value = inputValue.value;
+  const paragraph = document.createElement("p");
 
-  
+  if (value == 0){
+    answer = "invalid Input";
+    paragraph.style.color = "red";
+  } else {
+    if(value % 3 == 0 || value % 5 == 0){
+      if(value % 3 == 0){
+        answer += "Fizz";
+      } 
 
+      if(value % 5 == 0){
+        answer += "Buzz";
+      }
+
+      answer += "!";
+    } else {
+      answer = value;
+    }
+  }
+
+  paragraph.innerHTML = answer;
+
+  output.append(paragraph);
+  // debug[0].innerHTML = inputValue.value;
 }
