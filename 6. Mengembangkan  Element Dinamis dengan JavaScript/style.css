@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*! Modal */
+#myModal {
+  display: none;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 120px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modalContent {
+  background-color: #fefefe;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  width: 60%;
+}
+
+#closeModalIcon {
+  color: #aaaaaa;
+  float: right;
+}
+
+#closeModalIcon:hover,
+#closeModalIcon:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+/*! Accordion */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  
+  padding: 18px;
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px #ccc solid;
+  text-align: left;
+  font-size: 15px;
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  display: none;
+
+  padding: 0 18px;
+  background-color: white;
+}
+
+/*! Animasi */
+.slider-container {
+  text-align: center;
+  background-color: #eee;
+  width: 100%;
+}
+
+.slider-item {
+  display: none; /* Tersembunyi secara default */
+}
+
+img {
+  width: 30%;
+  height: 300px;
+  object-fit: contain;
+}
+
+.prev,
+.next {
+  /* position: absolute; */
+  top: 150px;
+  
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 3px;
+  user-select: none;
+  color: white;
+  padding: 10px;
+
+  margin: 0 0px;
+
+  background: green;
+
+  transition: all 0.5s;
+}
+
+.next {
+  right: 0;
+}
+
+/* Animasi */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/*! Debug */
+.debug{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+
+  padding: 20px;
+  background: green;
+  
+  margin-bottom: 0px;
+  color: white;
+}

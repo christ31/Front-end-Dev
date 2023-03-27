@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button onclick="changeButton(this)">Klik disini!</button>
+
+  <p id="console" style="background: green; color: white; padding: 20px">Ini adalah console</p>
+
+  <p id="greeting">Hello world</p>
+  <button onclick="changeColor(this)">Klik disini!</button>
+
+
+  <script>
+    function changeButton(obj) {
+      console.log(obj)
+
+      document.getElementById("console").innerHTML = obj;
+    }
+
+    const text = document.getElementById('greeting');
+    function changeColor() {
+	    text.style.color = "red";
+    }
+  </script>
+</body>
+</html>
