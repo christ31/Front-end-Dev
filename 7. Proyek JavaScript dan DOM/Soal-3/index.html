@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ini adalah hasil website tugas akhir HTML&CSS di Progate">
+  <meta name="keywords" content="Frontend, HTML, CSS, JavaScript, React, Git">
+  <meta name="author" content="C31">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+  <link rel="shortcut icon" href="img/fav_icon.png" type="image/x-icon">
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:url" content="https://christ31.github.io/Tugas-Individu-HTMLCSS-1/" />
+  <meta property="og:title" content="Progate | Aroma Bumi, Coffee & Tea, C31" />
+  <meta property="og:description" content="Aroma Bumi is a cafe that serve freshly brewed coffee & tea" />
+
+  <title>Aroma Bumi</title>
+</head>
+<body>
+  <!-- 1. Nav -->
+  <header>
+    <div class="header-mask">
+      <nav>
+        <div class="header-left">
+          <a href="index.html">
+            <img src="img/Logo White.png" alt="">
+          </a>
+        </div>
+        
+        <div class="header-right">
+          <a href="menu.html" id="navProducts" class="header-link">Products</a>
+          <a href="findus.html" id="navStore" class="header-link">Store</a>
+          <a href="help.html" id="navContact" class="header-link">Contact</a>
+        </div>
+      </nav>
+
+      <div class="header-hero-container">
+        <div class="header-hero">
+          <h1>Freshly Brewed Coffe & Tea</h1>
+          <p>Best qualities from our local soil</p>
+        </div>
+      </div>  
+    </div>
+  </header>
+
+  <!-- 2. Main -->
+  <main>
+    <div class="main-card-container js-scroll slide-in-up">
+      <div class="main-card-img">
+        <img src="img/Who are we.jpg" alt="">
+      </div>
+
+      <div class="main-card-desc margin-left">
+        <h1>Who are we?</h1>
+        <p>
+          We are Jakarta-based coffee and tea house
+focused on professionally brewing local
+sourced, high quality, coffee beans and
+tea leaves.
+        </p>
+      </div>
+    </div>
+
+    <div class="main-card-container js-scroll slide-in-left">
+      <div class="main-card-desc">
+        <h1>Product Showcase</h1>
+        <p>
+          Our products contain the highest quality
+          ingredients processed with care.
+        </p>
+        <button class="btn">
+          <a href="#b">See our coffee and tea</a>
+        </button>
+      </div>
+
+      <div class="main-card-img-2 margin-left">
+        <img src="img/Our products.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="main-card-container js-scroll slide-in-right">
+      <div class="main-card-img-3">
+        <img src="img/Hang out with us.jpg" alt="">
+      </div>
+
+      <div class="main-card-desc margin-left">
+        <h1>Hang out with us!</h1>
+        <p>
+          Our stores use sustainable  furnitures,
+          surrounded by nature, to help our
+          planet survive.
+        </p>
+
+        <button class="btn">
+          <a href="#a">Find our cafes</a>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- 3. Find Us -->
+  <div class="find-us">
+    <h1>Find us out at Instagram <span class="span-yellow"><a href="#ss">@aroma_bumi</a>!</span></h1>
+
+    <div class="find-us-feed">
+      <div class="find-us-feed-img">
+        <img src="img/Feed 1.png" alt="">
+        <img src="img/Feed 2.png" alt="">
+        <img src="img/Feed 3.png" alt="">
+        <img src="img/Feed 4.png" alt="">
+        <img src="img/Feed 5.png" alt="">
+        <img src="img/Feed 6.png" alt="">
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Ask Us -->
+  <div class="ask-us">
+    <h1>Ask us more!</h1>
+    <p>If you have any questions or interested to cooperate with us, kindly let us know here:</p>
+    <button class="btn">Contact Us</button>
+  </div>
+
+  <!-- 5. Footer -->
+  <footer>
+    <div>
+      <img src="img/Logo White.png" alt="">
+      <div class="footer-link-email">
+        <img src="img/MAIL ICON.svg" alt="">
+        <img src="img/PHONE ICON.svg" alt="">
+      </div>
+    </div>
+
+    <div>
+      <h4>Products</h4>
+      <p>Coffee Based</p>
+      <p>Non-Coffee</p>
+      <p>Tea Based</p>
+    </div>
+
+    <div>
+      <h4>Store</h4>
+      <p>Location</p>
+    </div>
+    
+    <div>
+      <h4>Contact</h4>
+      <p>Customer Service</p>
+    </div>
+  </footer>
+
+  <debug onmouseover="showDebug()" class="dbg hide" id="dbg">
+    <div id="dbg-window-width"></div>
+    <div id="dbg-rect-top"></div>
+  </debug>
+  <!-- JavaScript -->
+  <script src="js/java.js"></script>
+</body>
+</html>
