@@ -1,3 +1,4 @@
+//! Modal
 const modal = document.getElementById("myModal");
 const openButton = document.getElementById("openModalButton");
 
