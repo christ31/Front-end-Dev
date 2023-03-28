@@ -284,7 +284,6 @@ main{
   display: block;
 }
 
-
 .menu-main-card-container{
   display: flex;
   flex-wrap: wrap;
@@ -612,15 +611,19 @@ main{
 /* 5. Footer */
 footer{
   background: #143642;
-  height: 480px;
   border-radius: 30px;
-
-  padding: 100px 100px;
-  display: flex;
 }
 
-footer div{
-  flex: auto;
+.footer-header{
+  padding: 60px 60px;
+
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.footer-content{
+
 }
 
 footer div img{
@@ -628,13 +631,14 @@ footer div img{
 }
 
 .footer-link-email{
-  margin-top: 30px;
   filter: invert(100%) sepia(93%) saturate(28%) hue-rotate(24deg) brightness(108%) contrast(107%);
+
+  margin: auto 0 auto auto;
 }
 
 .footer-link-email img{
   height: 48px;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 footer div h4{
@@ -650,6 +654,53 @@ footer div p{
   margin-top: 20px;
 }
 
+.footer-end{
+  padding: 60px 60px;
+  color: white;
+  font-size: 24px;
+  width: 100%;
+
+  text-align: center;
+}
+/*! Accordion */
+.accordion {
+  display: flex;
+  justify-content: space-between;
+
+  color: white;
+  cursor: pointer;
+  padding: 0px 60px;
+  
+  width: 100%;
+
+  border: none;
+  border-bottom: 1px #ccc solid;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.accordion h4{
+  margin: auto 0;
+  color: white;
+}
+
+.accordion img{
+  height: 100%;
+  transform: rotate(180deg);
+
+  transition: all 0.31s;
+
+  filter: invert(100%) sepia(93%) saturate(28%) hue-rotate(24deg) brightness(108%) contrast(107%);
+}
+
+.accordion:hover {
+
+}
+
+.panel {
+  display: none;
+  padding: 0 90px;
+}
 
 /* ! Animation */
 .scrolled.slide-in-right{

@@ -115,3 +115,22 @@ if (searchParam.includes("q=coffee")){
   cappucino.classList.add("hide");
 }
 
+//! Accordion
+const btnAccordion = document.getElementsByClassName("accordion");
+const panel = document.getElementsByClassName("panel");
+const arrowImg = document.getElementsByClassName("accordion-img");
+
+for(let i = 0; i < btnAccordion.length; i++){
+  btnAccordion[i].addEventListener('click', ()=>{
+    let thisPanel = panel[i];
+    let arrowImgIdx = arrowImg[i]
+
+    if (thisPanel.style.display === "block"){
+      thisPanel.style.display = "none";
+      arrowImgIdx.style.transform = "rotate(180deg)";
+    } else {
+      thisPanel.style.display = "block";
+      arrowImgIdx.style.transform = "rotate(90deg)";
+    }
+  })
+}
