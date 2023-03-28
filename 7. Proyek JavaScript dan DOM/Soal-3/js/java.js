@@ -66,7 +66,7 @@ let navStore = document.getElementById("navStore");
 let navContact = document.getElementById("navContact");
 
 
-
+// ! Activate orange background if url = ...
 if (path.includes("index.html")){
   console.log("Sedang di index.html");
 } else if(path.includes("menu.html")){
@@ -82,5 +82,36 @@ if (path.includes("index.html")){
   navContact.classList.add("active");
 } else {
   console.log("Tidak sedang dimana-mana");
+}
+
+// ! Filter menu.html based on URL
+let searchParam = window.location.search;
+let linkCoffeeBased = document.getElementsByClassName("sidebar-item");
+
+let arenLatte = document.getElementsByClassName("menu-main-card-link")[0];
+let cafeLatte = document.getElementsByClassName("menu-main-card-link")[1];
+let caramelLatte = document.getElementsByClassName("menu-main-card-link")[2];
+let americano = document.getElementsByClassName("menu-main-card-link")[3];
+let cappucino = document.getElementsByClassName("menu-main-card-link")[4];
+let butterscotch = document.getElementsByClassName("menu-main-card-link")[5];
+
+
+if (searchParam.includes("q=coffee")){
+  linkCoffeeBased[0].classList.add("selected");
+  butterscotch.classList.add("hide");
+} else if(searchParam.includes("q=non-coffee")){
+  linkCoffeeBased[1].classList.add("selected");
+
+  arenLatte.classList.add("hide");
+  cafeLatte.classList.add("hide");
+
+} else if(searchParam.includes("q=tea")){
+  linkCoffeeBased[2].classList.add("selected");
+
+  arenLatte.classList.add("hide");
+  cafeLatte.classList.add("hide");
+  caramelLatte.classList.add("hide");
+  americano.classList.add("hide");
+  cappucino.classList.add("hide");
 }
 
